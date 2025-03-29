@@ -1,9 +1,10 @@
 variable "region" {
-  default = "us-east-1"
+  description = "Região da AWS"
+  type        = string
 }
 
 variable "vpc_id" {
-  description = "VPC ID onde o banco será criado"
+  description = "ID da VPC onde o banco será criado"
   type        = string
 }
 
