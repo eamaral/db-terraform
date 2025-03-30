@@ -1,6 +1,6 @@
 output "rds_endpoint" {
-  description = "Endpoint of the RDS"
-  value       = aws_db_instance.fastfood_db.endpoint
+  description = "Endpoint do RDS sem porta"
+  value       = split(":", aws_db_instance.fastfood_db.endpoint)[0]
 }
 
 output "rds_username" {
